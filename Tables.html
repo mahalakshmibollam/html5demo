@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+    <h1> JNTUK University - Student Information</h1>
+    <table border="1">
+        <tr>
+            <th>Roll Number</th>
+            <th>Student Name</th>
+            <th>Course</th>
+            <th>Contact Number</th>
+        </tr>
+        <tr>
+            <td>409</td>
+            <td>Maha</td>
+            <td>ECE</td>
+            <td>8090853456</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>Mike</td>
+            <td>Electrical</td>
+            <td>3564647</td>
+        </tr>
+        <tr>
+            <td>1003</td>
+            <td>Mark Zuckerberg</td>
+            <td>Electrical</td>
+            <td>3564647</td>
+        </tr>
+        <tr>
+            <td>1004</td>
+            <td>Bjarne Stroustrup</td>
+            <td>Information Science</td>
+            <td>87833737327</td>
+        </tr>
+        <tr>
+            <td>1005</td>
+            <td>Dennis Ritchie</td>
+            <td>Computer Science</td>
+            <td>3664733837</td>
+    </table>
+
+    <!-- Rowspan & Colspan demo - Merging of rows/columns-->
+    <h1>Wipro Employee Information</h1>
+
+    <table border="2" cellpadding="15" cellspacing="20">
+        <tr bgcolor="yellow">
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th colspan="2">Technologies</th>
+        </tr>
+        <tr>
+            <td>99901</td>
+            <td>Jhonson</td>
+            <td colspan="2" align="center">Spring Framework</td>
+        </tr>
+        <tr>
+            <td>88801</td>
+            <td>Mary</td>
+            <td colspan="2"  align="center">Angular</td>
+        </tr>
+        <tr>
+            <td>77701</td>
+            <td>maria</td>
+            <td>Angular</td>
+            <td>MongoDB</td>
+        </tr>
+        <tr>
+            <td>66701</td>
+            <td>anvi</td>
+            <td colspan="2"  align="center">HTML5</td>
+        </tr>
+        <tr>
+            <td>56801</td>
+            <td>yashu</td>
+            <td>JDBC</td>
+            <td>Hibernate</td>
+        </tr>
+        <tr bgcolor="yellow">
+            <td rowspan="2">90782</td>
+            <td rowspan="2">sanvi</td>
+            <td colspan="2"  align="center">Java Script</td>
+            </tr>
+            <tr bgcolor="yellow">
+                <td colspan="2"  align="center">JQuery</td>
+            </tr>
+        </tr>
+
+</table>
+</body>
+</html>

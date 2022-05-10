@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRD WATCHING</title>
+    <style>
+       /* || General setup */
+html, body {
+ margin: 0;
+ padding: 0;
+}
+html {
+ font-size: 10px;
+ background-color: #a9a9a9;
+}
+body {
+ width: 100%;
+ min-width: 800px;
+ margin: 0 auto;
+}
+/* || typography */
+h1, h2, h3 {
+ font-family: 'Cinzel Decorative', cursive;
+ color: #2a2a2a;
+}
+p, input, li {
+ font-family: 'Roboto Condensed', sans-serif;
+ color: #2a2a2a;
+}
+h1 {
+ font-size: 4rem;
+ text-align: center;
+ text-shadow: 2px 2px 10px black;
+}
+h2 {
+ font-size: 3rem;
+ text-align: center;
+}
+h3 {
+ font-size: 2.2rem;
+}
+p, li {
+ font-size: 1.6rem;
+ line-height: 1.5;
+}
+/* || header layout */
+header {
+ margin-bottom: 10px;
+ display: flex;
+ flex-flow: row wrap;
+}
+body > * {
+ padding: 1%;
+}
+main, header, nav, article, aside, footer, section {
+ background-color: rgba(0,255,0,0.5);
+ padding: 1%;
+}
+h1 {
+ flex: 5;
+ text-transform: uppercase;
+}
+header img {
+ display: block;
+ height: 60px;
+ padding-top: 20.15px;
+}
+nav {
+ height: 50px;
+ flex: 100%;
+ display: flex;
+}
+nav ul {
+ padding: 0;
+ list-style-type: none;
+ flex: 2;
+ display: flex;
+}
+nav li {
+ display: inline;
+ text-align: center;
+ flex: 1;
+}
+nav a, nav span {
+ display: inline-block;
+ font-size: 2rem;
+ height: 3rem;
+ line-height: 1.7;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: black;
+}
+/* || main layout */
+main {
+ display: flex;
+}
+article,section {
+   width:100%;
+   height:395px;
+    flex: 4;
+}
+aside {
+ flex: 1;
+ text-align: center;
+ height:415px;
+ width:250px;
+ margin-left: 30px;
+ padding: 1%;
+ border-width: 1%;
+}
+aside p {
+ display: block;
+ float: left;
+}
+aside img {
+ max-width: 100%;
+ width:120%;
+ height:70%;
+}
+footer {
+ margin-top: 1px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <header>
+            <h1>BIRD WATCHING</h1>
+            <img src="bird.jpeg" width="80" height="150">
+            <div id="navlinks">
+        <nav>
+            &nbsp;&nbsp;<a style="padding-left:150px;">HOME</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;<a style="padding-left:150px;">GET&nbsp;STARTED</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="padding-left:100px;padding-right: 100px;">PHOTOS</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="padding-right:150px;">GEAR</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="padding-right:100px;">FORUM</a>
+        </nav>
+    </div>
+        </header>
+    </div>
+    <div id="main" >
+        <main>
+            <article>
+                <br>
+                <br>
+                <h2>WELCOME</h2>
+                <p>Welcome to our fake birdwatching site, it would be the <br>ideal place to come to learn more about birdwatching, whether you are a<br>beginner looking to learn how to get into birding, or an expert wanting to share<br>ideas, tips, and photos with other like minded people.
+                    <br>
+                    <br>
+                    So don't waste time! Get what  you need, then turn off that computer and get out <br>into the great outdoors!
+                </p>
+                </article>
+    <br>
+            <div id="aside">
+                <aside>
+                    <h3>FAVOURITE<BR>PHOTOS</h3>
+                        <img src="birds.jpg">
+                </aside>
+                   
+            </div> 
+            </main>
+            </div>          
+    <div id="footer">
+        <footer style="background-color: rgba(0,255,0,0.5);">
+            <p>This fake website example is CCO - any part of this code may be reused in any way you wish. Original example written by<br>
+                Chris Mills, 2016.</p>
+            <a style="font-size:30px;" href="index.html">Dove icon</a>&nbsp;&nbsp;&nbsp;<a style="font-size:20px">by Lorc.</a>
+            <br>
+            <br>
+        </footer>
+    </div> 
+</body>
+</html>

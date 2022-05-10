@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        h2{color:gold;
+        font-family:sans-serif;
+    }
+    table,td{border:0px solid}
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 2px 8px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body style="background-color:cadetblue;">
+    <table  cellpadding ="8" width="600" 
+    style ="background-color: aqua; text-align: center;">
+        <div style="text-align:center;">
+            <caption align="top">
+                <h2>Employee Registration Form</h2>
+        </caption>
+        <form name ="regForm">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fName" size="30"
+                    tabindex="1" 
+                    placeholder="Enter your First Name"
+                    style="background-color: #FFFFFF;
+                    border-color: #800000;"
+                    autofocus required></td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lName" size="30"
+                    tabindex="2" 
+                    placeholder="Enter your Last Name"
+                    style="background-color: #FFFFFF;
+                    border-color: #800000;" required></td>
+            </tr>
+
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" name="uName" size="30"
+                    tabindex="3" 
+                    placeholder="Enter your User Name"
+                    style="background-color: #FFFFFF;
+                    border-color: #800000;" required></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pass" size="30"
+                    tabindex="4" 
+                    placeholder="Enter your Password"
+                    style="background-color: #FFFFFF;
+                    border-color: #800000;"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,14}"
+                    title="Must contain at least one number and
+                    one uppercase and lowercase letter, and at
+                    least 8 or max 14 characters"
+                    required></td>
+                     <!-- (?=.*[a-z]) - At least one lowercase letter(a - z).
+                    (?=.*\d) - At least one Numeric Digit (0-9)
+                    (?=.*[A-Z]) - - At least one Upper case letter(A - Z).
+                    -->
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" name="cpass" size="30"
+                    tabindex="5" 
+                    placeholder="Enter your Confirm Password"
+                    minlength="8" maxlength="14"
+                    style="background-color: #FFFFFF;
+                    border-color: #800000;" required></td>
+            </tr>
+
+            <tr>
+                <td>Education</td>
+                <td><input type="checkbox" name="edu1" size="30"
+                    value="Graduate" tabindex="6" required>Graduate 
+                    <input type="checkbox" name="edu2" size="30"
+                    value="Post Graduate" tabindex="7" >Post Graduate </td>
+            </tr>
+            
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" size="30"
+                    value="Male" tabindex="8" required>Male
+                    <input type="radio" name="gender" size="30"
+                    value="Female" tabindex="9" required>Female</td>
+            </tr>
+
+            <tr>
+                <td>Enter Your Comments</td>
+                <td><textarea rows="5" cols="30" wrap="hard"
+                    tabindex="10" 
+                    style="background-color: #FFFFFF;
+                    border-color: #800000;">
+                    </textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>State</td>
+                <td>
+                    <select name="state" tabindex="11">
+                        <option>Andhra Pradesh</option>
+                        <option>Bihar</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option selected>Karnataka</option>
+                        <option>Punjab</option>
+                        <option>UttaraKhand</option>
+                        <option>Uttar Pradesh</option>
+                    </select>
+                   </td>
+            </tr>
+            <!--HTML5 Controls-->
+            <tr>
+                <td>Programming Languages</td>
+                <td>
+                    <input list="langauages" tabindex="12">
+                   <!-- Datalist - AutoComplete Feature-->
+                    <datalist id="langauages" name="langauages">
+                        <option>Cobol</option>
+                        <option>C</option>
+                        <option>C++</option>
+                        <option>C#</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                        <option>PHP</option>
+                        <option>Visual Basic</option>
+                    </datalist>
+                   </td>
+            </tr>
+
+            <tr>
+                <td>Select Your Color</td>
+                <td>
+                    <input type="color" name="favColor" id="favColor"
+                    tabindex="13">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type="date" name="dob" id="dob"
+                    tabindex="14">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Meeting Date & Time</td>
+                <td>
+                    <input type="datetime-local" name="meeting" id="meeting"
+                    tabindex="15">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email Address</td>
+                <td>
+                    <input type="email" name="email" id="email" 
+                    tabindex="16" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Web Site</td>
+                <td>
+                    <input type="url" name="website" id="website" 
+                    tabindex="17" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Contact Number</td>
+                <td>
+                    <input type="tel" name="contact" id="contact"
+                    tabindex="18"
+                    pattern="[0-9]{4}-[0-9]{6}" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Register Me">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </form>
+    </div>
+    </table>
+</body>
+</html>
